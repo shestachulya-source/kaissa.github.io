@@ -1,339 +1,169 @@
-/* ==================================================
-   REVIEWS
-================================================== */
-
 .reviews-grid{
-
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:35px;
-
 }
-
 .review-card{
-
     padding:35px;
-
     transition:.35s;
-
 }
-
 .review-card:hover{
-
     transform:translateY(-8px);
-
     border-color:rgba(214,177,93,.35);
-
 }
-
 .review-stars{
-
     color:var(--gold);
-
     font-size:24px;
-
     margin-bottom:20px;
-
 }
-
 .review-card p{
-
     color:var(--text);
-
     margin-bottom:25px;
-
     line-height:1.8;
-
 }
-
 .review-author{
-
     font-weight:700;
-
     color:white;
-
 }
-
-/* ==================================================
-   CONTACT
-================================================== */
-
 .contact-form{
-
     max-width:900px;
-
     margin:0 auto;
-
 }
-
 .form-grid{
-
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
     gap:25px;
-
     margin-bottom:25px;
-
 }
-
 .contact-form textarea{
-
     margin-bottom:30px;
-
 }
-
 .contact-form button{
-
     width:100%;
-
     border:none;
-
     cursor:pointer;
-
     font-size:18px;
-
 }
-
-/* ==================================================
-   FOOTER
-================================================== */
-
 .footer{
-
     background:#0a0a0a;
-
 }
-
 .footer-grid{
-
     display:grid;
-
     grid-template-columns:2fr 1fr 1fr;
-
     gap:60px;
-
 }
-
 .footer h3{
-
     font-size:30px;
-
     margin-bottom:20px;
-
 }
-
 .footer h4{
-
     font-size:22px;
-
     margin-bottom:20px;
-
 }
-
 .footer p{
-
     color:#bcbcbc;
-
     line-height:1.8;
-
 }
-
 .footer a{
-
     display:block;
-
     margin-bottom:14px;
-
     color:#bcbcbc;
-
     transition:.3s;
-
 }
-
 .footer a:hover{
-
     color:var(--gold);
-
 }
-
 .footer-bottom{
-
     margin-top:60px;
-
     padding-top:30px;
-
     border-top:1px solid rgba(255,255,255,.08);
-
     text-align:center;
-
     color:#888;
-
 }
-
-/* ==================================================
-   ANIMATIONS
-================================================== */
-
 .info-card,
 .teacher-card,
 .price-card,
 .review-card{
-
     opacity:0;
-
     transform:translateY(40px);
-
     animation:cardFade .8s forwards;
-
 }
-
 .info-card:nth-child(2),
 .teacher-card:nth-child(2),
 .price-card:nth-child(2),
 .review-card:nth-child(2){
-
     animation-delay:.15s;
-
 }
 
 .info-card:nth-child(3),
 .teacher-card:nth-child(3),
 .price-card:nth-child(3),
 .review-card:nth-child(3){
-
     animation-delay:.3s;
-
 }
-
 .info-card:nth-child(4){
-
     animation-delay:.45s;
-
 }
-
 @keyframes cardFade{
-
     from{
-
         opacity:0;
-
         transform:translateY(40px);
-
     }
-
     to{
-
         opacity:1;
-
         transform:translateY(0);
-
     }
-
 }
-
-/* ==================================================
-   MOBILE
-================================================== */
-
 @media(max-width:1000px){
-
 .about-grid{
-
 grid-template-columns:1fr;
-
 }
-
 .about-cards{
-
 grid-template-columns:repeat(2,1fr);
-
 }
-
 .teachers-grid,
 .prices-grid,
 .reviews-grid{
-
 grid-template-columns:1fr;
-
 }
-
 .featured{
-
 transform:none;
-
 }
-
 .featured:hover{
-
 transform:translateY(-10px);
-
 }
-
 .footer-grid{
-
 grid-template-columns:1fr;
-
 gap:40px;
-
 }
-
 }
-
 @media(max-width:700px){
-
 .section{
-
 padding:80px 0;
-
 }
-
 .section-header h2{
-
 font-size:34px;
-
 }
-
 .section-header p{
-
 font-size:16px;
-
 }
-
 .about-cards{
-
 grid-template-columns:1fr;
-
 }
-
 .form-grid{
-
 grid-template-columns:1fr;
-
 }
-
 .teacher-photo{
-
 height:300px;
-
 }
-
 .price{
-
 font-size:36px;
-
 }
-
 .info-card,
 .teacher-card,
 .price-card,
 .review-card{
-
 padding:25px;
-
 }
 
 }
