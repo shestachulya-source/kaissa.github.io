@@ -165,5 +165,8 @@ font-size:36px;
 .review-card{
 padding:25px;
 }
+.swiper{
+    overflow:hidden;
+}
 
 }

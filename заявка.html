@@ -1,0 +1,47 @@
+<section class="section dark" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span>Записаться</span>
+            <h2>Оставьте заявку</h2>
+            <p>
+                Мы свяжемся с вами в ближайшее время и ответим на все вопросы.
+            </p>
+        </div>
+        <form class="contact-form" action="send.php" method="POST">
+            <div class="form-grid">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="ФИО"
+                    required
+                >
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Телефон"
+                    required
+                >
+                <select name="address" required>
+                    <option value="">Выберите филиал</option>
+                    <option>ул. Ленина, 10</option>
+                    <option>пр. Победы, 25</option>
+                    <option>ул. Советская, 17</option>
+                </select>
+                <select name="tariff" required>
+                    <option value="">Выберите тариф</option>
+                    <option>Старт</option>
+                    <option>Оптимальный</option>
+                    <option>Индивидуальный</option>
+                </select>
+            </div>
+            <textarea
+                name="message"
+                rows="5"
+                placeholder="Комментарий (необязательно)"
+            ></textarea>
+            <button class="btn btn-gold">
+                Отправить заявку
+            </button>
+        </form>
+    </div>
+</section>
